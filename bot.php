@@ -126,7 +126,7 @@ function curl($url, $ua, $data = null){
 
 function head($user, $cookie){
 $ua = [
-    'Host: trxsatoshi.xyz',
+    'Host: uptocoin.my.id',
  //berada di menu Request
     'User-Agent: '.$user,
     'Cookie: '.$cookie,
