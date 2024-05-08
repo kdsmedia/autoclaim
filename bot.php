@@ -99,10 +99,6 @@ $y1="\033[01;38;5;220m";
 $y2="\033[01;38;5;226m";
 $y3="\033[01;38;5;228m";
 /* END COLOR */
-
-//Tambahkan TY
-
-include('yt.php')
 	
 //Tambahkan Bagian include cfg nya 
 
