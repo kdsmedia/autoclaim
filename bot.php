@@ -141,7 +141,7 @@ $dash = curl($url, head($user, $cookie));
 //Jngan di Ubah
 
 $account = explode('</h5>',explode('<h5>',$dash)[1])[0]; //explode bagian Tulisan Balance nya jika ada
-$balance = explode ('</p>',explode('<p class="acc-amount"><i class="fas fa-coins"></i> ',$dash)[1])[0];
+$balance = explode ('</p>',explode('<div class="text-3xl font-medium leading-8 mt-6">327.8 UCoin</div> ',$dash)[1])[0];
 //explode Jumlah Total Balance nya jika ada
 echo $yellow2."💸 ".$account." Lu".$putih2."    : ".$green2.$balance."\n";
 
@@ -200,7 +200,7 @@ $url = "https://uptocoin.my.id/dashboard";
  $ub = curl($url, head($user, $cookie));
  //PERBEDAAN NYA CUMAN $ub ($ub bisa kalian ubah , karena ini update an balance  dashboard yang baru )
 $account = explode('</h5>',explode('<h5>',$ub)[1])[0]; //explode nama balance seperti diatas
-$balance = explode ('</p>',explode('<p class="acc-amount"><i class="fas fa-coins"></i> ',$ub)[1])[0]; //explode jumlah balance seperti diatas
+$balance = explode ('</p>',explode('<div class="text-3xl font-medium leading-8 mt-6">327.8 UCoin</div> ',$ub)[1])[0]; //explode jumlah balance seperti diatas
 
 echo $lblue2."[".$yellow2."💸".$lblue2."] ".$green2."Total Your ".$account.$putih2."      : ".$yellow2.$balance."\n";
 
