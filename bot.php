@@ -126,7 +126,7 @@ function curl($url, $ua, $data = null){
 
 function head($user, $cookie){
 $ua = [
-    'Host: uptocoin.my.id',
+    'Host: 99faucet.com',
  //berada di menu Request
     'User-Agent: '.$user,
     'Cookie: '.$cookie,
@@ -135,7 +135,7 @@ return $ua;
 }
 
 //BAGIAN DASHBOARD
-$url = "https://uptocoin.my.id/dashboard";
+$url = "https://99faucet.com/dashboard";
  //Isi Link Dashboard
 $dash = curl($url, head($user, $cookie));
 //Jngan di Ubah
@@ -164,7 +164,7 @@ exit;
 
 //FUNGSI WHILE TRUE (PERULANGAN) MENGULANGI
 while(true){
-$url = "https://uptocoin.my.id/auto";
+$url = "https://99faucet.com/faucet";
  //Isi Link Auto 
  $auto = curl($url, head($user, $cookie));
  //Jangan Di Ubah
@@ -183,7 +183,7 @@ sleep(1);
 echo "\r                       \r";
 
 //URL AUTO VERIFY
-$url = "https://uptocoin.my.id/auto";
+$url = "https://99faucet.com/faucet";
 /// SALIN ALAMAT AUTO VERIFY
 $data = "token=$token";
 $verify = curl($url, head($user, $cookie), $data);
@@ -195,7 +195,7 @@ echo $lblue2."[".$green2."✅".$lblue2."] ".$green2.$claim."\n";
 
 
 //BACK TO DASHBOARD 
-$url = "https://uptocoin.my.id/dashboard";
+$url = "https://99faucet.com/dashboard";
  //URL DASHBOARD 
  $ub = curl($url, head($user, $cookie));
  //PERBEDAAN NYA CUMAN $ub ($ub bisa kalian ubah , karena ini update an balance  dashboard yang baru )
